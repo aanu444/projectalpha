@@ -1,0 +1,409 @@
+/* Designed with 425px screen size: for large sized mobile phones */
+*{
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    margin:0;
+}
+
+.row::after{
+    content:" ";
+    clear:both;
+    display:table;
+}
+
+[class*="col-"]{
+        float:left;
+        padding:15px;
+}
+
+div{
+    border:0px solid black;
+}
+
+.col-{
+    width:100%;
+}
+
+.header{
+    background-color:black;
+    position:fixed;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    display:inline;
+}
+
+ul li {
+    display:inline;
+}
+
+ul li a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+}
+
+ul li a:hover{
+    padding:5px;
+    background-color:grey;
+    color:black;
+}
+.landing-img{
+    background-image:url("../images/coffeeshop.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position-y:20%;
+    height:220px;
+}
+
+h1{
+    margin-top:170px;
+    font-size:0.87em;
+    padding:7px;
+    width:35%;
+    background-color:grey;
+    color:white;
+}
+
+.transform{
+    text-transform:uppercase;
+    padding:7px;
+    width:45%;
+    background-color:black;
+    color:white;
+    text-align:center;
+    margin-left:100px;
+}
+
+.coffee-img{
+    width:100%;
+}
+
+.menu{
+    height:50px;
+    border:1px solid #888888;
+    width:90%;
+    margin-left:18px;
+    box-shadow:6px 6px 10px #888888;
+
+}
+
+
+.menu-list{
+    margin:65px;
+    font-size:1.13em;
+}
+
+.menu-item{
+    border:1px solid #888888;
+    width:90%;
+    margin-left:18px;
+    box-shadow:6px 6px 10px #888888;
+    height:450px;
+    font-size:1.13em;
+}
+
+.menu-item p{
+    font-weight:bold;
+    margin-top:45px;
+    
+}
+
+.menu-item span{
+    display:block;
+    color:grey;
+    font-weight:bold;
+    margin-top:12px;
+}
+
+#menu0{
+    display:none;
+}
+
+.coffee-style{
+    margin-top:20px;
+}
+
+.fyi{
+    padding:5px;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+}
+
+form{
+    display:table;
+}
+
+.contact{
+    background-color:#e4e2de;
+}
+
+input{
+    display:table;
+    margin:20px;
+    padding:10px;
+    border-radius:2px;
+    border:1px solid #888888;
+    margin-left:50px;
+}
+
+input[type=text]{
+    width:100%;
+
+}
+
+input[type=datetime-local]{
+    width:100%;
+}
+
+textarea{
+    width:100%;
+    display:table;
+    height:200px;
+    margin-left:50px;
+    font-family:Arial;
+    font-size:1.13;
+    color:grey;
+}
+
+input[type="submit"]{
+    background-color:black;
+    color:white;
+}
+
+.footer{
+    background-color:grey;
+    color:white;
+
+}
+
+.footer p{
+    text-align:center;
+}
+
+/* Media Queries For Responsiveness */
+
+/* Code for screens at 320px or smaller - For mobile phones at smallest size */
+@media only screen and (min-width:320px) and (max-width:374px){
+    ul li a{
+        margin-left:2px;
+    }
+
+    .header-content{
+        display:none;
+    }
+
+    .sm-header-content{
+        margin-top:50px;
+    }
+
+    .transform{
+        font-size:0.86em;
+        font-weight:bold;
+        margin-left:80px;
+    }
+
+    .menu-list{
+        margin:45px;
+    }
+
+    .menu-item{
+        height:520px;
+    }
+
+    input{
+        margin-left:15px;
+    }
+
+    textarea{
+        margin-left:15px;
+    }
+}
+
+/* Code for screens at 375px or smaller - For mobile phones at medium size */
+@media only screen and (min-width:375px) and (max-width:767px){
+    ul li a{
+        margin:15px;
+        font-size: 1em;
+    }
+    
+    h1{
+        font-size:0.75em;
+    }
+    
+    .sm-intro{
+        font-size:0.94em;
+    }
+    
+    .menu-list{
+        margin:50px;
+        font-size:1.06em;
+    }
+    
+    .menu-item{
+        height:480px;
+    }
+    
+    input{
+        margin-left:35px;
+    }
+    
+    textarea{
+        margin-left:35px;
+    }
+    
+    .footer p{
+        font-size:1em;
+    }
+    }
+
+/* Code for screens at 768px  or smaller - For tablets small or large */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    ul li a {
+        margin:55px;
+    }
+
+    .landing-img{
+        height:400px;
+    }
+
+    h1{
+        margin-top:350px;
+
+    }
+
+    .tb-col{
+        width:80%;
+        margin-left:80px;
+    }
+
+    .menu{
+        width:80%;
+        margin-left:80px;
+    }
+
+    .menu-item{
+        width:80%;
+        margin-left:80px;
+    }
+
+    .transform{
+        margin-left:150px;
+    }
+
+    input{
+        margin-left:0px;
+    }
+
+    textarea{
+        margin-left:0px;
+    }
+
+    .menu-list{
+        margin-left:130px;
+    }
+} 
+
+    
+/* Media query for screens at 1024px or bigger; this is for laptops */
+@media only screen and (min-width:1024px){
+    ul li a{
+        margin:90px;
+    }
+
+    .landing-img{
+        height:480px;
+    }
+
+    h1{
+        margin-top:435px;
+        width:20%;
+    }
+
+    .transform{
+        margin-left:300px;
+        width:25%;
+    }
+
+    .menu-list:first-child{
+        margin-left:150px;
+    }
+
+    .tb-col{
+        width:80%;
+        margin-left:80px;
+    }
+
+    .menu{
+        width:80%;
+        margin-left:80px;
+    }
+
+    .menu-item{
+        width:80%;
+        margin-left:80px;
+    }
+
+    #drink{
+        margin-left:250px;
+    }
+
+    input{
+        width:500px;
+    }
+
+    
+}
+
+/* Media query for screens at 1440px or bigger; this is for large sized laptops */
+@media only screen and (min-width:1440px){
+    ul li a{
+        margin:140px;
+    }
+
+    .landing-img{
+        height:650px;
+    }
+
+    h1{
+        margin-top:600px;
+        padding:9px;
+        width:20%;
+    }
+
+    .tb-col{
+        margin-left:140px;
+    }
+
+    .transform{
+        margin-left:400px;
+    }
+
+    .menu{
+        margin-left:140px;
+    
+    }
+
+    .menu-item{
+        margin-left:140px;
+    }
+
+    .menu-list:first-child{
+        margin-left:290px;
+    }
+
+    input{
+        width:500px;
+    }
+
+    #drink{
+        margin-left:350px;
+    }
+}
